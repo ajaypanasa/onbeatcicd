@@ -38,6 +38,10 @@ jobs:
       uses: actions/download-artifact@v1
       with:
           name: app
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
     - name: list app folder
       run: |
         ls -la /home/runner/work/onbeatcicd/onbeatcicd/app
