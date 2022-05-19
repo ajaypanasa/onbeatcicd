@@ -39,9 +39,6 @@ jobs:
       with:
           name: app
 
-    - name: Checkout
-      uses: actions/checkout@v2
-
     - name: list app folder
       run: |
         ls -la /home/runner/work/onbeatcicd/onbeatcicd/app
@@ -67,6 +64,10 @@ jobs:
             npm install -g appium@v1.20.2
             appium -v
             appium &>/dev/null &
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
     - name: list app folder before QA script
       run: |
         ls -la /home/runner/work/onbeatcicd/onbeatcicd/app
