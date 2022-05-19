@@ -48,6 +48,7 @@ jobs:
 #        chmod +x /home/runner/work/onbeatcicd/onbeatcicd/app/build/outputs/apk/debug/app-debug.apk
 #        ls -la /home/runner/work/onbeatcicd/onbeatcicd/app
 #        ls -la /home/runner/work/onbeatcicd/onbeatcicd/app/build/outputs/apk/debug
+
      - name: list app folder
        run: |
           ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android
