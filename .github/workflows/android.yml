@@ -41,7 +41,7 @@ jobs:
         ls -la /home/runner/work/onbeat-android/onbeat-android/app
         ls -la /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug
         chmod +x /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug/app-debug.apk
-        chmod +x /home/runner/work/onbeat-android/onbeat-android/app/app-debug.apk
+        chmod +x /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug/app-debug.apk
         ls -la /home/runner/work/onbeat-android/onbeat-android/app
         ls -la /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug
     - name: Open and list sub-dir
@@ -66,7 +66,7 @@ jobs:
         ls -la /home/runner/work/onbeat-android/onbeat-android/app
         ls -la /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug
         chmod +x /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug/app-debug.apk
-        chmod +x /home/runner/work/onbeat-android/onbeat-android/app/app-debug.apk
+        chmod +x /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug/app-debug.apk
         ls -la /home/runner/work/onbeat-android/onbeat-android/app
         ls -la /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug        
     - name: QA Tests
