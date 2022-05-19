@@ -4,6 +4,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
@@ -32,9 +33,9 @@ public class test1 {
 //        String appurl= System.getProperty("user.dir") + File.separator + "src" + File.separator
 //                + "main" + File.separator + "resources" + File.separator + "OnBeat.apk";
 
-        String appurl= File.separator + "home" + File.separator + "runner" + File.separator
-                + "work" + File.separator + "onbeat-android"+ File.separator + "onbeat-android"
-                + File.separator + "app" + File.separator + "app-debug.apk";
+        String appurl = File.separator + "home" + File.separator + "runner" + File.separator
+                + "work" + File.separator + "onbeatcicd" + File.separator + "onbeatcicd"
+                + File.separator + "app" + File.separator + "build" + File.separator + "outputs" + File.separator + "apk" + File.separator + "debug" + File.separator + "app-debug.apk";
 
 //        String appurl= "app" + File.separator + "build" + File.separator + "outputs"
 //                + File.separator + "apk" + File.separator + "debug" + File.separator + "app-debug.apk";
@@ -49,8 +50,8 @@ public class test1 {
 
     @Test
     public void Test() {
-        String ticket= "test@0004";
-        String phone= "09000000004";
+        String ticket = "test@0004";
+        String phone = "09000000004";
         String pass1 = "1234";
         String pass2 = "1111";
         String pass3 = "2222";
@@ -475,8 +476,7 @@ public class test1 {
 
     @AfterClass
     public void tearDown() {
-        if (null != driver)
-        {
+        if (null != driver) {
             driver.quit();
         }
     }
