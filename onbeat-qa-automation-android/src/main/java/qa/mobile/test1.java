@@ -30,7 +30,8 @@ public class test1 {
         caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
         caps.setCapability("avd", "test");
         caps.setCapability("avdLaunchTimeout", 600000);
-        caps.setCapability("uiautomator2ServerLaunchTimeout", 90000);
+        caps.setCapability("uiautomator2ServerLaunchTimeout", 600000);
+        caps.setCapability("adbExecTimeout", 600000);
 
 //        caps.setCapability("noResetValue","false");
 
