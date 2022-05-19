@@ -21,8 +21,7 @@ public class test1 {
     @BeforeClass
     public void setUp() throws MalformedURLException {
 
-        File appDir = new File("src/main/resources/");
-        File app = new File(appDir, "OnBeat.apk");
+
 
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
@@ -39,6 +38,11 @@ public class test1 {
         String appurl = File.separator + "home" + File.separator + "runner" + File.separator
                 + "work" + File.separator + "onbeatcicd" + File.separator + "onbeatcicd"
                 + File.separator + "app" + File.separator + "build" + File.separator + "outputs" + File.separator + "apk" + File.separator + "debug" + File.separator + "app-debug.apk";
+
+      //  File appDir = new File("src/main/resources/");
+        File appDir = new File("src/main/resources/");
+        File app = new File(appDir, "app-debug.apk");
+
 
 //        String appurl= "app" + File.separator + "build" + File.separator + "outputs"
 //                + File.separator + "apk" + File.separator + "debug" + File.separator + "app-debug.apk";
