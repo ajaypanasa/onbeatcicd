@@ -22,6 +22,8 @@ jobs:
         cache: gradle
     - name: Add secret API Key
       run: echo "MAPS_API_KEY=\""${{ secrets.MAPS_API_KEY }}"\"" >> local.properties
+    - name: Change wrapper permissions
+        run: chmod +x ./gradlew
     - name: Build with Gradle
       run: ./gradlew build
     - name: Build debug APK
