@@ -42,9 +42,6 @@ jobs:
           name: app
           path: onbeat-qa-automation-android/src/main/resources
 
-    - name: 'Echo download path'
-      run: echo ${{steps.download.outputs.download-path}}
-
 #    - name: list app folder
 #      run: |
 #        ls -la /home/runner/work/onbeatcicd/onbeatcicd/app
@@ -57,11 +54,11 @@ jobs:
     - name: list app folder
       run: |
         ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android
-        ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources
-        chmod +x /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/OnBeat.apk
-        chmod +x /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/OnBeat.apk
+        ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app
+        chmod +x /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app/app-debug.apk
+        chmod +x /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app/app-debug.apk
         ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android
-        ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources
+        ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app
 
     - name: Open and list sub-dir
       run: |

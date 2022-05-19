@@ -45,8 +45,8 @@ public class test1 {
                 + File.separator + "app" + File.separator + "build" + File.separator + "outputs" + File.separator + "apk" + File.separator + "debug" + File.separator + "app-debug.apk";
 
       //  File appDir = new File("src/main/resources/");
-        File appDir = new File("src/main/resources/");
-        File app = new File(appDir, "OnBeat.apk");
+        File appDir = new File("src/main/resources/app/");
+        File app = new File(appDir, "app-debug.apk");
 
 
 //        String appurl= "app" + File.separator + "build" + File.separator + "outputs"
