@@ -37,13 +37,13 @@ jobs:
 
     - name: Download APK
       uses: actions/download-artifact@v1
+      id: download
       with:
           name: app
           path: onbeat-qa-automation-android/src/main/resources
 
-    - name: unzip artifact for deployment
-      run: unzip /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app
-
+    - name: 'Echo download path'
+      run: echo ${{steps.download.outputs.download-path}}
 
 #    - name: list app folder
 #      run: |
