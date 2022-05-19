@@ -25,7 +25,7 @@ public class test1 {
 
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 3");
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "test");
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
         caps.setCapability("avd", "Pixel_3");
