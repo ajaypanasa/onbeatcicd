@@ -42,12 +42,15 @@ public class test1 {
 
         String appurl = File.separator + "home" + File.separator + "runner" + File.separator
                 + "work" + File.separator + "onbeatcicd" + File.separator + "onbeatcicd"
-                + File.separator + "app" + File.separator + "build" + File.separator + "outputs" + File.separator + "apk" + File.separator + "debug" + File.separator + "app-debug.apk";
+                + File.separator + "app" + File.separator + "build" + File.separator + "outputs" + File.separator + "apk" + File.separator + "debug" + File.separator";
 
-      //  File appDir = new File("src/main/resources/");
-        File appDir = new File("src/main/resources/");
+//        File appDir = new File("src/main/resources/");
+//        File app = new File(appDir, "app-debug.apk");
+
+        File appDir = new File(appurl);
         File app = new File(appDir, "app-debug.apk");
 
+       // '/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk
 
 //        String appurl= "app" + File.separator + "build" + File.separator + "outputs"
 //                + File.separator + "apk" + File.separator + "debug" + File.separator + "app-debug.apk";

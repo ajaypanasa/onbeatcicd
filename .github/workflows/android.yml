@@ -40,7 +40,7 @@ jobs:
       id: download
       with:
           name: app
-          path: onbeat-qa-automation-android/src/main/resources
+          path: /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources
 
 #    - name: list app folder
 #      run: |
