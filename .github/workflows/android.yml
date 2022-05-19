@@ -40,12 +40,12 @@ jobs:
           name: app
     - name: list app folder
       run: |
-        ls -la /home/runner/work/onbeat-android/onbeat-android/app
-        ls -la /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug
-        chmod +x /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug/app-debug.apk
-        chmod +x /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug/app-debug.apk
-        ls -la /home/runner/work/onbeat-android/onbeat-android/app
-        ls -la /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug
+        ls -la /home/runner/work/onbeatcicd/onbeatcicd/app
+        ls -la /home/runner/work/onbeatcicd/onbeatcicd/app/build/outputs/apk/debug
+        chmod +x /home/runner/work/onbeatcicd/onbeatcicd/app/build/outputs/apk/debug/app-debug.apk
+        chmod +x /home/runner/work/onbeatcicd/onbeatcicd/app/build/outputs/apk/debug/app-debug.apk
+        ls -la /home/runner/work/onbeatcicd/onbeatcicd/app
+        ls -la /home/runner/work/onbeatcicd/onbeatcicd/app/build/outputs/apk/debug
     - name: Open and list sub-dir
       run: |
         chmod +x ./onbeat-qa-automation-android/src/test/java/com/qa/runners/MyRunnerTest.java
@@ -65,12 +65,12 @@ jobs:
             appium &>/dev/null &
     - name: list app folder before QA script
       run: |
-        ls -la /home/runner/work/onbeat-android/onbeat-android/app
-        ls -la /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug
-        chmod +x /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug/app-debug.apk
-        chmod +x /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug/app-debug.apk
-        ls -la /home/runner/work/onbeat-android/onbeat-android/app
-        ls -la /home/runner/work/onbeat-android/onbeat-android/app/build/outputs/apk/debug        
+        ls -la /home/runner/work/onbeatcicd/onbeatcicd/app
+        ls -la /home/runner/work/onbeatcicd/onbeatcicd/app/build/outputs/apk/debug
+        chmod +x /home/runner/work/onbeatcicd/onbeatcicd/app/build/outputs/apk/debug/app-debug.apk
+        chmod +x /home/runner/work/onbeatcicd/onbeatcicd/app/build/outputs/apk/debug/app-debug.apk
+        ls -la /home/runner/work/onbeatcicd/onbeatcicd/app
+        ls -la /home/runner/work/onbeatcicd/onbeatcicd/app/build/outputs/apk/debug
     - name: QA Tests
       uses: reactivecircus/android-emulator-runner@v2
       with:
