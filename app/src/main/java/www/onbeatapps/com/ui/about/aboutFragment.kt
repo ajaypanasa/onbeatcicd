@@ -24,6 +24,7 @@ class aboutFragment : BaseFragment<aboutViewModel>() {
     private val binding get() = _binding!!
     private val eventInfoViewModel: aboutViewModel by viewModels()
     var pageType = ""
+    var vale="";
 
     override fun setup() {
         arguments?.let {
