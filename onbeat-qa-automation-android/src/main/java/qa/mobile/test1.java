@@ -21,7 +21,7 @@ public class test1 {
     @BeforeClass
     public void setUp() throws MalformedURLException {
 
-        File appDir = new File("C:/Users/artlptp11user/Downloads/onbeat-android-main/onbeat-qa-automation-android/src/main/resources/");
+        File appDir = new File("src/main/resources/");
         File app = new File(appDir, "OnBeat.apk");
 
         DesiredCapabilities caps = new DesiredCapabilities();
