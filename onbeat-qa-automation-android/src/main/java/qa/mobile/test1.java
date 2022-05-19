@@ -30,6 +30,8 @@ public class test1 {
         caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
         caps.setCapability("avd", "test");
         caps.setCapability("avdLaunchTimeout", 600000);
+        capabilities.setCapability("uiautomator2ServerLaunchTimeout", 90000);
+
 //        caps.setCapability("noResetValue","false");
 
 //        String appurl= System.getProperty("user.dir") + File.separator + "src" + File.separator
