@@ -14,6 +14,7 @@ class aboutViewModel @Inject constructor(
 ) : BaseViewModel() {
 
     init {
+        val a ="";
         launchApiCall {
 //           val voucher = appDbHelper.getAllStudent()
 

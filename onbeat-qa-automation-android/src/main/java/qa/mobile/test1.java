@@ -18,9 +18,12 @@ import java.util.concurrent.TimeUnit;
 public class test1 {
 
     private AndroidDriver driver;
-
     @BeforeClass
     public void setUp() throws MalformedURLException {
+
+        File appDir = new File("C:/Users/artlptp11user/Downloads/onbeat-android-main/onbeat-qa-automation-android/src/main/resources/");
+        File app = new File(appDir, "OnBeat.apk");
+
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 3");
@@ -43,7 +46,9 @@ public class test1 {
 //        caps.setCapability("appPackage", "www.onbeatapps.com");
 //        caps.setCapability("appActivity", "www.onbeatapps.com.ui.authActivity.AuthActivity");
 
-        caps.setCapability(MobileCapabilityType.APP, appurl);
+        caps.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+
+       // caps.setCapability(MobileCapabilityType.APP, appurl);
         URL url = new URL("http://127.0.0.1:4723/wd/hub");
         driver = new AndroidDriver(url, caps);
     }
