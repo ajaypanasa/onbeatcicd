@@ -43,8 +43,6 @@ jobs:
 
     - name: unzip artifact for deployment
       run: unzip app.zip
-      with:
-        path: onbeat-qa-automation-android/src/main/resources
 
 
 #    - name: list app folder
