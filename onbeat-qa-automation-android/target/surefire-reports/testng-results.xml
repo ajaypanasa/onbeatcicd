@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="182909" started-at="2022-04-14T11:21:44 IST" finished-at="2022-04-14T11:24:47 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="182909" started-at="2022-04-14T11:21:44 IST" finished-at="2022-04-14T11:24:47 IST">
+      <class name="qa.mobile.test1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.mobile.test1@58c1670b]" name="setUp" is-config="true" duration-ms="7102" started-at="2022-04-14T11:21:44 IST" finished-at="2022-04-14T11:21:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Test()[pri:0, instance:qa.mobile.test1@58c1670b]" name="Test" duration-ms="175592" started-at="2022-04-14T11:21:51 IST" finished-at="2022-04-14T11:24:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:qa.mobile.test1@58c1670b]" name="tearDown" is-config="true" duration-ms="189" started-at="2022-04-14T11:24:46 IST" finished-at="2022-04-14T11:24:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qa.mobile.test1 -->
+    </test> <!-- Test -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
