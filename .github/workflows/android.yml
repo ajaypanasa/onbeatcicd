@@ -33,12 +33,13 @@ jobs:
       with:
           id: app_id
           name: app
-          path: onbeat-qa-automation-android/src/main/resources
-#          path: app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+
     - name: Download APK
       uses: actions/download-artifact@v1
       with:
           name: app
+          path: onbeat-qa-automation-android/src/main/resources
 
 #    - name: list app folder
 #      run: |
