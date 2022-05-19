@@ -32,6 +32,8 @@ public class test1 {
         caps.setCapability("avdLaunchTimeout", 600000);
         caps.setCapability("uiautomator2ServerLaunchTimeout", 600000);
         caps.setCapability("adbExecTimeout", 600000);
+        caps.setCapability("uiautomator2ServerInstallTimeout", 600000);
+
 
 //        caps.setCapability("noResetValue","false");
 
