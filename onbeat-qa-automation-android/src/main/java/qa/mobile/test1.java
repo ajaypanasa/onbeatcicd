@@ -52,7 +52,7 @@ public class test1 {
         String urlDir = "/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/";
 
         String fullPath = "/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk";
-        Atring newpath = "../app/build/outputs/apk/debug/app-debug.apk";
+        String newpath = "../app/build/outputs/apk/debug/app-debug.apk";
 
         File appDir = new File("src/main/resources/");
         File app = new File(appDir, "app-debug.apk");
