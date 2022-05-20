@@ -33,7 +33,7 @@ public class test1 {
         caps.setCapability("uiautomator2ServerLaunchTimeout", 600000);
         caps.setCapability("adbExecTimeout", 600000);
         caps.setCapability("uiautomator2ServerInstallTimeout", 600000);
-        cap.setCapability("appPackage", "www.onbeatapps.com");
+        caps.setCapability("appPackage", "www.onbeatapps.com");
 
 
 
