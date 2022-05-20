@@ -51,7 +51,7 @@ public class test1 {
 
         String urlDir = "/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/";
 
-        String fullPath = "/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk"
+        String fullPath = "/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk";
 
         File appDir = new File(urlDir);
         File app = new File(appDir, "app-debug.apk");
