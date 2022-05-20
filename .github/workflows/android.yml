@@ -34,6 +34,10 @@ jobs:
           id: app_id
           name: app
           path: app/build/outputs/apk/debug/app-debug.apk
+          env-url: FOOBAR
+
+    - name: Use URL for something
+      run: echo "${{ env.FOOBAR }}
 
     - name: Download APK
       uses: actions/download-artifact@v1
