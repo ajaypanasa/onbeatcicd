@@ -79,14 +79,14 @@ jobs:
             appium &>/dev/null &
 
 
-    - name: list app folder before QA script
-      run: |
-          ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android
-          ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources
-          chmod +x /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk
-          chmod +x /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk
-          ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android
-          ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources
+#    - name: list app folder before QA script
+#      run: |
+#          ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android
+#          ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources
+#          chmod +x /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk
+#          chmod +x /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk
+#          ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android
+#          ls -la /home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources
 
 #    - name: list app folder before QA script
 #      run: |

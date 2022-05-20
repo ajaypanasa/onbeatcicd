@@ -65,7 +65,38 @@ public class test1 {
 //        caps.setCapability("appPackage", "www.onbeatapps.com");
 //        caps.setCapability("appActivity", "www.onbeatapps.com.ui.authActivity.AuthActivity");
 
-        caps.setCapability(MobileCapabilityType.APP,newpath);
+        caps.setCapability(MobileCapabilityType.APP,newpath
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        );
 
        // caps.setCapability(MobileCapabilityType.APP, appurl);
         URL url = new URL("http://127.0.0.1:4723/wd/hub");
