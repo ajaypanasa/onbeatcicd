@@ -33,6 +33,8 @@ public class test1 {
         caps.setCapability("uiautomator2ServerLaunchTimeout", 600000);
         caps.setCapability("adbExecTimeout", 600000);
         caps.setCapability("uiautomator2ServerInstallTimeout", 600000);
+        cap.setCapability("appPackage", "www.onbeatapps.com");
+
 
 
 //        caps.setCapability("noResetValue","false");
@@ -49,6 +51,8 @@ public class test1 {
 
         String urlDir = "/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/";
 
+        String fullPath = "C:/Users/artlptp11user/Downloads/onbeat-android-main/onbeat-qa-automation-android/src/main/resources/app-debug.apk"
+
         File appDir = new File(urlDir);
         File app = new File(appDir, "app-debug.apk");
 
@@ -60,7 +64,7 @@ public class test1 {
 //        caps.setCapability("appPackage", "www.onbeatapps.com");
 //        caps.setCapability("appActivity", "www.onbeatapps.com.ui.authActivity.AuthActivity");
 
-        caps.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+        caps.setCapability(MobileCapabilityType.APP, fullPath);
 
        // caps.setCapability(MobileCapabilityType.APP, appurl);
         URL url = new URL("http://127.0.0.1:4723/wd/hub");
