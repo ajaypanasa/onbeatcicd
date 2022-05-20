@@ -21,8 +21,6 @@ public class test1 {
     @BeforeClass
     public void setUp() throws MalformedURLException {
 
-
-
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, "test");
@@ -35,40 +33,10 @@ public class test1 {
         caps.setCapability("uiautomator2ServerInstallTimeout", 600000);
         caps.setCapability("appPackage", "www.onbeatapps.com");
 
-
-
-//        caps.setCapability("noResetValue","false");
-
-//        String appurl= System.getProperty("user.dir") + File.separator + "src" + File.separator
-//                + "main" + File.separator + "resources" + File.separator + "OnBeat.apk";
-
-        String appurl = File.separator + "home" + File.separator + "runner" + File.separator
-                + "work" + File.separator + "onbeatcicd" + File.separator + "onbeatcicd"
-                + File.separator + "app" + File.separator + "build" + File.separator + "outputs" + File.separator + "apk" + File.separator + "debug" + File.separator;
-
-//        File appDir = new File("src/main/resources/");
-//        File app = new File(appDir, "app-debug.apk");
-
-        String urlDir = "/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/";
-
-        String fullPath = "/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk";
-        String newpath = "../../../../../../app/build/outputs/apk/debug/app-debug.apk";
-
         String path_data = "/home/runner/work/onbeatcicd/onbeatcicd/app/build/outputs/apk/debug/app-debug.apk";
-        File appDir = new File("src/main/resources/");
-        File app = new File(appDir, "app-debug.apk");
-
-       // '/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk
-
-//        String appurl= "app" + File.separator + "build" + File.separator + "outputs"
-//                + File.separator + "apk" + File.separator + "debug" + File.separator + "app-debug.apk";
-
-//        caps.setCapability("appPackage", "www.onbeatapps.com");
-//        caps.setCapability("appActivity", "www.onbeatapps.com.ui.authActivity.AuthActivity");
 
         caps.setCapability(MobileCapabilityType.APP,path_data);
 
-       // caps.setCapability(MobileCapabilityType.APP, appurl);
         URL url = new URL("http://127.0.0.1:4723/wd/hub");
         driver = new AndroidDriver(url, caps);
     }
