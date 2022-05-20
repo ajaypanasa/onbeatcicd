@@ -47,7 +47,9 @@ public class test1 {
 //        File appDir = new File("src/main/resources/");
 //        File app = new File(appDir, "app-debug.apk");
 
-        File appDir = new File(appurl);
+        String url = "/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources";
+
+        File appDir = new File(url);
         File app = new File(appDir, "app-debug.apk");
 
        // '/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk
