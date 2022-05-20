@@ -52,7 +52,7 @@ public class test1 {
         String urlDir = "/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/";
 
         String fullPath = "/home/runner/work/onbeatcicd/onbeatcicd/onbeat-qa-automation-android/src/main/resources/app-debug.apk";
-        String newpath = "../app/build/outputs/apk/debug/app-debug.apk";
+        String newpath = "../../../../../../app/build/outputs/apk/debug/app-debug.apk";
 
         File appDir = new File("src/main/resources/");
         File app = new File(appDir, "app-debug.apk");
@@ -65,38 +65,7 @@ public class test1 {
 //        caps.setCapability("appPackage", "www.onbeatapps.com");
 //        caps.setCapability("appActivity", "www.onbeatapps.com.ui.authActivity.AuthActivity");
 
-        caps.setCapability(MobileCapabilityType.APP,newpath
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        );
+        caps.setCapability(MobileCapabilityType.APP,newpath);
 
        // caps.setCapability(MobileCapabilityType.APP, appurl);
         URL url = new URL("http://127.0.0.1:4723/wd/hub");
